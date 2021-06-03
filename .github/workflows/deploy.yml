@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '14'
       
-      - name: Install Dependencies
-        run: yarn install --frozen-lockfile
-      
+      - name: Setup Env
+        run: npm ci 
+
       - name: Vite Build
         run: npm run build
