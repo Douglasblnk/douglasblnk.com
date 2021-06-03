@@ -13,13 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set node version 
+      - name: Set node version
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
-      
+          node-version: "14"
+
       - name: Setup Env
-        run: npm ci 
+        run: npm ci
 
       - name: Vite Build
         run: npm run build
