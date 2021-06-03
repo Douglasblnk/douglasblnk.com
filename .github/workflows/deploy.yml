@@ -19,7 +19,7 @@ jobs:
           node-version: "14"
 
       - name: Echo token
-        run: echo token ${{ secrets.DB_TOKEN }}
+        run: echo token ${{ secrets }}
         env:
           DB_TOKEN: ${{ secrets.DB_TOKEN }}
 
