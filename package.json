@@ -1,15 +1,14 @@
 {
   "name": "@douglasblnk/website",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "@douglasblnk/eslint-config": "^1.0.0",
+    "@douglasblnk/eslint-config": "^1.0.1",
     "eslint-define-config": "^1.0.8",
-    "sass": "^1.34.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
@@ -20,6 +19,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
     "prettier": "^2.3.0",
-    "vite": "^2.3.3"
+    "sass": "^1.34.1",
+    "vite": "^2.3.3",
+    "vite-plugin-components": "^0.10.4"
   }
 }
