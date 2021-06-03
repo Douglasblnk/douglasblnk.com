@@ -19,7 +19,7 @@ jobs:
           node-version: "14"
 
       - name: Setup Env
-        run: npm ci
+        run: npm install
 
       - name: Vite Build
         run: npm run build
