@@ -19,5 +19,5 @@ jobs:
           node-version: '14'
       
       - name: Check
-        uses: echo 'Até agora tudo filé'
+        run: echo 'Até agora tudo filé'
 
