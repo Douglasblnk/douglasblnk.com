@@ -20,4 +20,6 @@ jobs:
       
       - name: Check
         run: echo 'Até agora tudo filé'
-
+      
+      - name: Vite Build
+        run: npm run build
