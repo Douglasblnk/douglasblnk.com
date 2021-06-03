@@ -19,7 +19,9 @@ jobs:
           node-version: "14"
 
       - name: Echo token
-        run: echo ${{ DB_TOKEN }}
+        run: echo "$token"
+        env:
+          token: ${{ secrets.DB_TOKEN }}
 
       - name: Setup Env
         run: npm install
