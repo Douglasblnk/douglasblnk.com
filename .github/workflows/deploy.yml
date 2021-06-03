@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '14'
       
-      - name: Check
-        run: echo 'Até agora tudo filé'
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
       
       - name: Vite Build
         run: npm run build
