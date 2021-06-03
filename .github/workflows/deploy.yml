@@ -19,12 +19,12 @@ jobs:
           node-version: "14"
 
       - name: Echo token
-        run: echo "$token"
+        run: echo token ${{ secrets.DB_TOKEN }}
         env:
-          token: ${{ secrets.DB_TOKEN }}
+          DB_TOKEN: ${{ secrets.DB_TOKEN }}
 
       - name: Setup Env
-        run: npm install
+        run: npm ci
 
       - name: Vite Build
         run: npm run build
