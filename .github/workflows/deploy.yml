@@ -18,10 +18,13 @@ jobs:
         with:
           node-version: "14"
 
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.DB_TOKEN }}" > ~/.npmrc
+      - name: Authenticate npm with the GPR
+        uses: jgierer12/npm-auth-gpr@v1.0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Env
-        run: npm ci
+        run: npm install
 
       - name: Vite Build
         run: npm run build
