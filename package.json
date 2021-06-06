@@ -1,6 +1,7 @@
 {
   "name": "@douglasblnk/website",
   "version": "1.0.0",
+  "repository": "douglasblnk/website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
