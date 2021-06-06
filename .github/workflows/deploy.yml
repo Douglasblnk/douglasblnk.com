@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: "14"
 
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.DB_TOKEN }}" > ~/.npmrc
+
       - name: Setup Env
         run: npm ci
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Vite Build
         run: npm run build
