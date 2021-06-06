@@ -28,7 +28,7 @@ jobs:
 
       - name: Vite Build
         run: npm run build
-      
+
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete --exclude '.git/*'
