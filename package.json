@@ -8,20 +8,23 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vite-plugin-components": "^0.10.4",
     "vite": "^2.3.3",
+    "vite-plugin-components": "^0.10.4",
     "vue": "^3.0.5"
   },
   "devDependencies": {
+    "@douglasblnk/eslint-config": "^1.0.1",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "@douglasblnk/eslint-config": "^1.0.1",
     "eslint": "^7.27.0",
     "eslint-define-config": "^1.0.8",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
+    "postcss": "^8.3.0",
     "prettier": "^2.3.0",
-    "sass": "^1.34.1"
+    "sass": "^1.34.1",
+    "vite-plugin-windicss": "^1.0.1",
+    "windicss": "^3.1.1"
   }
 }

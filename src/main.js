@@ -1,7 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import 'virtual:windi.css';
 
-import './styles/styles.scss'
-import './styles/colors.scss'
+import './styles/styles.postcss';
 
-createApp(App).mount('#app')
+createApp(App).mount('#app');

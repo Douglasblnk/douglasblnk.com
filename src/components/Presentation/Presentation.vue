@@ -1,30 +1,32 @@
 <template>
   <div class="home-container">
-    <h1>Douglas Blank</h1>
+    <h1>Hello, I'm Douglas Blank</h1>
   </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Presentation',
-})
+});
 </script>
 
-<style lang="scss">
-.home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+<style lang="postcss">
+@layer components {
+  .home-container {
+    @apply w-full;
 
-  h1 {
-    color: var(--title-color);
-    font-weight: 300;
-    font-size: 3rem;
-    letter-spacing: 1px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    h1 {
+      font-family: 'Monoid';
+      color: #fff;
+      font-weight: bold;
+      font-size: 40px;
+    }
   }
 }
 </style>
