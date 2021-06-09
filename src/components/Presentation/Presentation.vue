@@ -1,31 +1,31 @@
 <template>
-  <div class="home-container">
-    <h1>Hello, I'm Douglas Blank</h1>
+  <div class="presentation">
+    <div class="presentation__title">
+      <h1>Hello, I'm Douglas Blank</h1>
+      <small>or just Doug</small>
+    </div>
   </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'Presentation',
-});
-</script>
-
 <style lang="postcss">
 @layer components {
-  .home-container {
-    @apply w-full;
+  .presentation {
+    @apply flex flex-col items-center mb-32;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    &__title {
+      @apply flex flex-col items-end;
 
-    h1 {
-      font-family: 'Monoid';
-      color: #fff;
-      font-weight: bold;
-      font-size: 40px;
+      h1 {
+        font-family: 'Monoid';
+
+        @apply text-white font-bold text-3xl opacity-70;
+      }
+
+      small {
+        font-family: 'Monoid';
+
+        @apply text-white opacity-40;
+      }
     }
   }
 }

@@ -1,6 +1,9 @@
 <template>
-  <div class="home-container">
-    <Presentation />
+  <div class="home">
+    <div class="home__content">
+      <Presentation />
+      <Work />
+    </div>
   </div>
 </template>
 
@@ -16,8 +19,14 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
-.home-container {
-  margin: 7rem 0;
+<style lang="postcss">
+.home {
+  margin: 10rem 0;
+
+  @apply w-full flex flex-col items-center;
+
+  &__content {
+    @apply w-screen-lg;
+  }
 }
 </style>
