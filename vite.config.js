@@ -7,17 +7,12 @@ import WindiCSS from 'vite-plugin-windicss';
 export default defineConfig({
   plugins: [
     vue(),
-    ViteComponents(),
+    ViteComponents({
+      dirs: [
+        'src/components',
+        'src/pages',
+      ],
+    }),
     WindiCSS(),
   ],
-
-  optimizeDeps: {
-    include: [
-      'windicss',
-      'windicss/colors',
-      'windicss/utils/style',
-      'windicss/utils/parser',
-    ],
-    exclude: [],
-  },
 });
