@@ -4,6 +4,12 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Monoid';
+  src: url('../assets//fonts/Monoid-Regular.ttf') format("truetype");
+  font-weight: normal;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,13 +17,16 @@
   margin: 0;
   padding: 0;
 
-  span, p, strong, small, h1, h2, h3, h4, h5 {
-    font-family: 'Nunito';
-  }
+}
+
+span, p, strong, small, h1, h2, h3, h4, h5 {
+  font-family: 'Nunito';
 }
 
 body {
-  background-color: rgb(43, 43, 43);
+  width: 100%;
+  height: 100%;
+  background-color: #23262D;
 }
 
 button {

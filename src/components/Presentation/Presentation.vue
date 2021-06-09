@@ -1,30 +1,32 @@
 <template>
-  <div class="home-container">
-    <h1>Douglas Blank</h1>
+  <div class="presentation">
+    <div class="presentation__title">
+      <h1>Hello, I'm Douglas Blank</h1>
+      <small>or just Doug</small>
+    </div>
   </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<style lang="postcss">
+@layer components {
+  .presentation {
+    @apply flex flex-col items-center mb-32;
 
-export default defineComponent({
-  name: 'Presentation',
-})
-</script>
+    &__title {
+      @apply flex flex-col items-end;
 
-<style lang="scss">
-.home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+      h1 {
+        font-family: 'Monoid';
 
-  h1 {
-    color: var(--title-color);
-    font-weight: 300;
-    font-size: 3rem;
-    letter-spacing: 1px;
+        @apply text-white font-bold text-3xl opacity-70;
+      }
+
+      small {
+        font-family: 'Monoid';
+
+        @apply text-white opacity-40;
+      }
+    }
   }
 }
 </style>
