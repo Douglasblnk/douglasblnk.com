@@ -8,25 +8,24 @@
 </template>
 
 <style lang="postcss">
-@layer components {
-  .presentation {
-    @apply flex flex-col items-center mb-32;
+.presentation {
+  @apply flex flex-col items-center mb-32;
 
-    &__title {
-      @apply flex flex-col items-end;
+  &__title {
+    @apply flex flex-col items-end;
 
-      h1 {
-        font-family: 'Monoid';
+    h1 {
+      font-family: 'Monoid';
 
-        @apply text-white font-bold text-3xl opacity-70;
-      }
+      @apply text-white font-bold text-3xl opacity-70;
+    }
 
-      small {
-        font-family: 'Monoid';
+    small {
+      font-family: 'Monoid';
 
-        @apply text-white opacity-40;
-      }
+      @apply text-white opacity-40;
     }
   }
 }
+
 </style>

@@ -9,11 +9,9 @@
 </script>
 
 <style lang="postcss">
-@layer components {
-  .work {
-    h1 {
-      @apply flex flex-col items-center
-    }
+.work {
+  h1 {
+    @apply flex flex-col items-center;
   }
 }
 </style>
